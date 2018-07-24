@@ -1,0 +1,21 @@
+<div class="container">
+    <p>{{ mainTitle }}</p>
+    <hr />
+    <br />
+
+    <div ng-controller="ctrlBUMain">
+        <md-content>
+            Start Date:
+            <br />
+            <md-datepicker ng-model="dtStartDate"></md-datepicker>
+            <br />
+            End Date:
+            <br />
+            <md-datepicker ng-model="dtEndDate"></md-datepicker>
+        </md-content>
+        <md-button class="md-raised" ng-click="passData()">Search</md-button>
+    </div>       
+    <br />
+    <hr />
+    <a href="#/home">Home</a>
+</div>
